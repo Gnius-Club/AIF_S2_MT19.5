@@ -1,24 +1,289 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 19.5 : Implementando el Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 19.5 : Implementando el Feedback</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Implementar las mejoras de Experiencia de Usuario (UX) planificadas en la sesión anterior.</li>
+                                        <li>Transformar el MVP a una versión 1.1 mejorada.</li>
+                                        <li>Practicar la integración de nuevo código y assets en un proyecto existente.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización de la sesión como un ciclo de iteración.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Énfasis en la mejora tangible de la UX.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Guía de implementación ordenada con Xolo como co-programador.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Taller intensivo de implementación y pruebas comparativas.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Demostración "antes y después" de la mejora implementada.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>El prototipo MVP actualizado a la versión 1.1, con las 1-2 mejoras de UX (sonido, indicador de progreso, 'juice') planificadas en el GDD, implementadas y funcionales.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Prototipos MVP funcionales de la Misión 18.5.</li>
+                                        <li>GDDs actualizados con el "Plan de Iteración 1.1".</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Acceso a IAs generativas de assets (audio, texturas) si es necesario.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo puede modificar scripts existentes para añadir funcionalidades de UX (sonido, etc.).</li>
+                                                <li>Verificar que los estudiantes tienen sus GDDs y MVPs listos para la iteración.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Prepararse para guiar una sesión de desarrollo enfocado, ayudando a los equipos a ser precisos en sus descripciones de "Vibe Coding" para features de UX.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de desarrollo iterativo y presentar la misión como la implementación de mejoras expertas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: bienvenidos a la versión 1.1.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Diseñadores. Tienen un prototipo funcional y un plan de mejora basado en feedback experto. Hoy es la sesión de iteración. Su misión es implementar esas mejoras. Convertirán las sugerencias en características reales. Este es el ciclo que define a los grandes productos: construir, medir, aprender y mejorar. Bienvenidos a la versión 1.1."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 19.5, siguiendo el protocolo estándar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la sesión como la materialización del feedback en una mejor experiencia.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador establece el objetivo: comparar el "antes" y el "después".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión de producción enfocada. Tomen su 'Plan de Iteración 1.1' de su GDD y háganlo realidad. Ya sea añadir feedback sonoro, un indicador de progreso o un efecto visual más impactante, hoy es el día para implementarlo. El objetivo es comparar el 'antes' y el 'después' y sentir la diferencia en la calidad de la experiencia."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán decir con orgullo: <strong>'Mi equipo ha implementado exitosamente el feedback de diseño, mejorando la experiencia de usuario de nuestro prototipo.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
+                <p>Establecer el rol de Xolo como co-programador para la implementación de mejoras de UX.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su sesión de implementación con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Para implementar sus mejoras, consulten a su co-programador. Díganle a Xolo: <strong>'Xolo, consulta nuestro Plan de Iteración 1.1. Nuestra primera mejora es [describir mejora]. Guíanos para implementarla.'</strong> Él les pedirá que describan la 'vibe' de la nueva funcionalidad para proporcionarles el código Python modificado. Trabajen mejora por mejora, de forma ordenada."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Supervisar el taller de implementación de mejoras y las pruebas comparativas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Taller de Implementación y Vibe Coding de UX ⏰ 12 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos implementan las mejoras planificadas, generando código y assets con IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Enfóquense en programar las 1-2 mejoras clave de su plan. Sean precisos en su descripción a Xolo. 'Hacerlo más bonito' no es una vibe accionable. 'Al completar el puzzle, activar un sistema de partículas de confeti en la posición de la puerta' es una vibe clara que Xolo puede traducir a código. Dialoguen con él, generen el código o assets, e intégrénlo en su proyecto."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pruebas Comparativas ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos comparan su MVP original con la nueva versión 1.1.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Una vez implementada la mejora, realicen una prueba comparativa. Primero, prueben la versión original de su MVP, si la guardaron. Luego, prueben la nueva versión 1.1. Discutan como equipo: ¿tuvo la mejora el impacto deseado? ¿Se 'siente' mejor la experiencia? Sean críticos con el resultado de su iteración."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la demostración "antes y después" y la retroalimentación sobre la mejora en la sensación del juego.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión sobre el impacto de la mejora.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. ¿Cómo cambió la 'sensación' del juego con la nueva característica que implementaron? ¿Qué hace que se sienta mejor (o peor, si es el caso)?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) - 'Antes y Después' ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes demuestran la mejora implementada.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Demuestren la mejora más significativa que implementaron hoy. Si es posible, muestren el 'antes' y el 'después'. Expliquen cómo la nueva característica cambia la sensación del juego. El compañero experimenta y prepara su feedback."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback sobre la mejora de UX.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'La diferencia en la sensación es notable, especialmente...' 2. 'Esta mejora hace que el juego sea más satisfactorio porque...' 3. 'Una pregunta que tengo sobre la implementación de esta mejora es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, consolidando el poder de la iteración enfocada en UX.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han experimentado el poder de la iteración. Han visto cómo un pequeño cambio enfocado en la experiencia del usuario puede transformar un producto. Su proyecto ya no solo 'funciona', ahora empieza a 'sentirse bien'. En la próxima sesión, añadiremos la capa final de pulido profesional: el sonido y la atmósfera. Están a un paso de la línea de meta."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
